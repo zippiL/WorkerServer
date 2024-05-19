@@ -15,7 +15,8 @@ namespace Worker.Data
         public DbSet<TagRole> TagRoles { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-RVOHTK2;Database=workersS_db;TrustServerCertificate=true;trusted_connection=true;");        
+            optionsBuilder.UseSqlServer("Server=34.122.63.173;Database=zippi325698;Uid=SqlServer;Pwd=123456;TrustServerCertificate=Yes");        
+            //optionsBuilder.UseSqlServer("Server=DESKTOP-RVOHTK2;Database=workersS_db;TrustServerCertificate=true;trusted_connection=true;");        
             //optionsBuilder.UseSqlServer("Server=(localdb)\\ProjectModels;Database=sample_db");
 
         }
